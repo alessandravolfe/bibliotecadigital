@@ -1,12 +1,12 @@
 /* ==========================================
-   BIBLIOTECA VERBUM
+   BIBLIOTECA - VERBUM
 ========================================== */
 
-.library-hero{
+.library-banner{
 
-padding:170px 0 80px;
+padding:170px 0 90px;
 
-background:#6E1B1B;
+background:linear-gradient(135deg,#6E1B1B,#3A0E0E);
 
 color:white;
 
@@ -14,37 +14,49 @@ text-align:center;
 
 }
 
-.library-hero h1{
+.library-banner h1{
 
-font-size:54px;
+font-size:56px;
 
 margin-bottom:15px;
 
 }
 
-.library-hero p{
+.library-banner p{
 
 font-size:20px;
 
-margin-bottom:35px;
-
 opacity:.9;
+
+margin-bottom:40px;
 
 }
 
-.library-hero input{
+.search-box{
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.search-box input{
 
 width:100%;
 
-max-width:600px;
+max-width:650px;
 
-padding:18px;
+padding:18px 22px;
 
 border:none;
 
-border-radius:12px;
+border-radius:14px;
 
 font-size:16px;
+
+outline:none;
+
+box-shadow:0 10px 30px rgba(0,0,0,.15);
 
 }
 
@@ -58,11 +70,11 @@ background:#F8F8F8;
 
 .continue-reading h2{
 
-margin-bottom:30px;
-
-font-size:34px;
+font-size:36px;
 
 color:#6E1B1B;
+
+margin-bottom:30px;
 
 }
 
@@ -72,69 +84,107 @@ display:flex;
 
 align-items:center;
 
-gap:30px;
+gap:35px;
 
 background:white;
 
 padding:30px;
 
-border-radius:18px;
+border-radius:20px;
 
-box-shadow:0 12px 30px rgba(0,0,0,.08);
+box-shadow:0 15px 40px rgba(0,0,0,.08);
 
 }
 
-.cover{
+.continue-cover{
 
-width:120px;
+width:180px;
 
-height:170px;
+flex-shrink:0;
 
-background:#6E1B1B;
+}
 
-color:white;
+.continue-cover img{
 
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-font-size:55px;
+width:100%;
 
 border-radius:12px;
 
-}
-
-.continue-card h3{
-
-font-size:28px;
-
-margin-bottom:10px;
+display:block;
 
 }
 
-.continue-card p{
+.continue-info{
 
-color:#777;
+flex:1;
+
+}
+
+.badge{
+
+display:inline-block;
+
+background:#F4E7C3;
+
+color:#6E1B1B;
+
+padding:8px 16px;
+
+border-radius:40px;
+
+font-size:13px;
+
+font-weight:600;
 
 margin-bottom:20px;
 
 }
 
-.continue-card a{
+.continue-info h3{
 
-background:#C8A44D;
+font-size:32px;
 
-padding:12px 25px;
-
-border-radius:8px;
-
-text-decoration:none;
+margin-bottom:12px;
 
 color:#222;
 
+}
+
+.continue-info p{
+
+color:#666;
+
+margin-bottom:25px;
+
+font-size:17px;
+
+}
+
+.read-button{
+
+display:inline-block;
+
+padding:15px 28px;
+
+background:#6E1B1B;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:10px;
+
 font-weight:600;
+
+transition:.3s;
+
+}
+
+.read-button:hover{
+
+background:#4B1414;
+
+transform:translateY(-2px);
 
 }
 
@@ -148,9 +198,9 @@ padding:90px 0;
 
 font-size:38px;
 
-color:#6E1B1B;
-
 margin-bottom:40px;
+
+color:#6E1B1B;
 
 }
 
@@ -158,27 +208,27 @@ margin-bottom:40px;
 
 display:grid;
 
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 
 gap:35px;
 
 }
 
-.book-item{
+.book-card{
 
 background:white;
 
-border-radius:18px;
+border-radius:20px;
 
 overflow:hidden;
 
-box-shadow:0 12px 30px rgba(0,0,0,.08);
+box-shadow:0 15px 40px rgba(0,0,0,.08);
 
 transition:.3s;
 
 }
 
-.book-item:hover{
+.book-card:hover{
 
 transform:translateY(-8px);
 
@@ -192,41 +242,23 @@ display:block;
 
 }
 
-.book-details{
+.book-content{
 
 padding:25px;
 
 }
 
-.book-category{
+.book-content h3{
 
-display:inline-block;
+font-size:24px;
 
-background:#F4E7C3;
+margin:15px 0;
 
-color:#6E1B1B;
-
-padding:6px 12px;
-
-border-radius:30px;
-
-font-size:13px;
-
-font-weight:600;
-
-margin-bottom:15px;
+line-height:1.4;
 
 }
 
-.book-details h3{
-
-font-size:22px;
-
-margin-bottom:10px;
-
-}
-
-.book-details p{
+.book-content p{
 
 color:#777;
 
@@ -234,26 +266,60 @@ margin-bottom:20px;
 
 }
 
-.read-btn{
+.btn-read{
 
 display:inline-block;
 
-background:#6E1B1B;
+background:#C8A44D;
 
-color:white;
+color:#222;
 
 padding:12px 25px;
 
-border-radius:8px;
+border-radius:10px;
 
 text-decoration:none;
 
 font-weight:600;
 
+transition:.3s;
+
 }
 
-.read-btn:hover{
+.btn-read:hover{
 
-background:#4E1313;
+background:#B99337;
+
+}
+
+.active{
+
+color:#6E1B1B !important;
+
+font-weight:700;
+
+}
+
+@media(max-width:900px){
+
+.continue-card{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.continue-cover{
+
+width:220px;
+
+}
+
+.library-banner h1{
+
+font-size:42px;
+
+}
 
 }
