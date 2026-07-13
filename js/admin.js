@@ -4,90 +4,79 @@
 
 const ebooks = [];
 
-document.addEventListener("DOMContentLoaded", () => {
+const formulario = document.querySelector(".ebook-form");
+const tabela = document.getElementById("lista-ebooks");
+const mensagem = document.getElementById("mensagem-sucesso");
 
-    const formulario = document.querySelector(".ebook-form");
+formulario.addEventListener("submit", function(e){
 
-    formulario.addEventListener("submit", function(e){
+    e.preventDefault();
 
-        e.preventDefault();
+    const titulo = document.getElementById("titulo").value.trim();
+    const categoria = document.getElementById("categoria").value;
+    const descricao = document.getElementById("descricao").value.trim();
+    const paginas = document.getElementById("paginas").value;
 
-       const titulo = document.getElementById("titulo").value.trim();
+    const livro = {
 
-const categoria = document.getElementById("categoria").value;
+        titulo,
+        categoria,
+        descricao,
+        paginas
 
-const descricao = document.getElementById("descricao").value.trim();
+    };
 
-const paginas = document.getElementById("paginas").value;
+    ebooks.push(livro);
 
-        if(titulo==="" || descricao==="" || paginas===""){
+    atualizarTabela();
 
-            alert("Preencha todos os campos.");
+    formulario.reset();
 
-            return;
+    mensagem.style.display = "block";
 
-        }
+    setTimeout(()=>{
 
-        ebooks.push({
+        mensagem.style.display = "none";
 
-            titulo,
-            categoria,
-            descricao,
-            paginas
-
-        });
-
-        atualizarTabela();
-
-        document.getElementById("mensagem-sucesso").style.display="block";
-
-        formulario.reset();
-
-        setTimeout(()=>{
-
-            document.getElementById("mensagem-sucesso").style.display="none";
-
-        },3000);
-
-    });
+    },3000);
 
 });
 
 function atualizarTabela(){
 
-    const tabela = document.getElementById("lista-ebooks");
-
     tabela.innerHTML="";
 
-    ebooks.forEach((livro,index)=>{
+    ebooks.forEach((livro,indice)=>{
 
-        tabela.innerHTML+=`
+        tabela.innerHTML += `
 
-<tr>
+        <tr>
 
-<td>${livro.titulo}</td>
+            <td>${livro.titulo}</td>
 
-<td>${livro.categoria}</td>
+            <td>${livro.categoria}</td>
 
-<td>${livro.paginas}</td>
+            <td>${livro.paginas}</td>
 
-<td>
+            <td>
 
-<span class="action-btn">✏️</span>
+                <button onclick="excluirLivro(${indice})">
 
-<span class="action-btn" onclick="removerLivro(${index})">🗑️</span>
+                    🗑️
 
-</td>
+                </button>
 
-</tr>
+            </td>
 
-`;
+        </tr>
+
+        `;
 
     });
 
 }
 
-function removerLivro(indice){
+function excluirLivro(indice){
 
     ebooks.splice(indice,1);
 
