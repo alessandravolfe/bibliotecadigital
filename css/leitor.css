@@ -1,0 +1,187 @@
+/* ==========================================
+   LEITOR - VERBUM
+========================================== */
+
+.reader{
+
+padding:170px 0 80px;
+
+background:#F5F5F5;
+
+min-height:100vh;
+
+}
+
+.reader-header{
+
+text-align:center;
+
+margin-bottom:40px;
+
+}
+
+.reader-header h1{
+
+font-size:46px;
+
+color:#6E1B1B;
+
+margin-bottom:10px;
+
+}
+
+.reader-header p{
+
+color:#777;
+
+font-size:18px;
+
+}
+
+.reader-controls{
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+margin-bottom:40px;
+
+flex-wrap:wrap;
+
+}
+
+.reader-controls button{
+
+padding:14px 22px;
+
+border:none;
+
+border-radius:10px;
+
+background:#6E1B1B;
+
+color:white;
+
+font-size:16px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.reader-controls button:hover{
+
+background:#4B1414;
+
+transform:translateY(-2px);
+
+}
+
+.reader-content{
+
+background:white;
+
+max-width:900px;
+
+margin:auto;
+
+padding:60px;
+
+border-radius:18px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+font-size:22px;
+
+line-height:2.1;
+
+color:#333;
+
+}
+
+.reader-content p{
+
+margin-bottom:30px;
+
+}
+
+.reader-navigation{
+
+display:flex;
+
+justify-content:space-between;
+
+max-width:900px;
+
+margin:40px auto 0;
+
+}
+
+.reader-navigation a{
+
+text-decoration:none;
+
+background:#C8A44D;
+
+color:#222;
+
+padding:15px 28px;
+
+border-radius:10px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.reader-navigation a:hover{
+
+background:#B89338;
+
+}
+
+@media(max-width:900px){
+
+.reader{
+
+padding-top:140px;
+
+}
+
+.reader-header h1{
+
+font-size:34px;
+
+}
+
+.reader-content{
+
+padding:35px;
+
+font-size:19px;
+
+line-height:1.9;
+
+}
+
+.reader-navigation{
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+.reader-navigation a{
+
+text-align:center;
+
+}
+
+}
