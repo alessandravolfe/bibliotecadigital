@@ -1,1 +1,199 @@
+/* ==========================================
+   PAINEL ADMIN - VERBUM
+========================================== */
 
+.admin{
+
+padding:170px 0 80px;
+
+background:#F5F5F5;
+
+min-height:100vh;
+
+}
+
+.admin h1{
+
+font-size:52px;
+
+color:#6E1B1B;
+
+margin-bottom:10px;
+
+}
+
+.admin> .container > p{
+
+font-size:18px;
+
+color:#777;
+
+margin-bottom:50px;
+
+}
+
+.dashboard{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+margin-bottom:60px;
+
+}
+
+.dashboard .card{
+
+background:white;
+
+padding:35px;
+
+border-radius:18px;
+
+text-align:center;
+
+box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.dashboard .card:hover{
+
+transform:translateY(-6px);
+
+}
+
+.dashboard h2{
+
+font-size:42px;
+
+margin-bottom:10px;
+
+}
+
+.dashboard h3{
+
+font-size:36px;
+
+color:#6E1B1B;
+
+margin-bottom:8px;
+
+}
+
+.dashboard p{
+
+color:#777;
+
+}
+
+.section-title{
+
+font-size:34px;
+
+color:#6E1B1B;
+
+margin-bottom:30px;
+
+}
+
+.ebook-form{
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.ebook-form label{
+
+display:block;
+
+margin-top:22px;
+
+margin-bottom:8px;
+
+font-weight:600;
+
+}
+
+.ebook-form input,
+.ebook-form select,
+.ebook-form textarea{
+
+width:100%;
+
+padding:16px;
+
+border:1px solid #DDD;
+
+border-radius:10px;
+
+font-size:16px;
+
+font-family:'Poppins',sans-serif;
+
+}
+
+.ebook-form textarea{
+
+resize:vertical;
+
+min-height:140px;
+
+}
+
+.ebook-form button{
+
+margin-top:30px;
+
+width:100%;
+
+padding:18px;
+
+background:#6E1B1B;
+
+color:white;
+
+border:none;
+
+border-radius:12px;
+
+font-size:18px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.ebook-form button:hover{
+
+background:#4E1313;
+
+}
+
+@media(max-width:900px){
+
+.admin{
+
+padding-top:140px;
+
+}
+
+.admin h1{
+
+font-size:38px;
+
+}
+
+}
