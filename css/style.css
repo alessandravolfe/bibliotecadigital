@@ -924,3 +924,34 @@ font-size:20px;
 margin-top:20px;
 
 }
+.book-cover img{
+
+width:100%;
+
+display:block;
+
+}
+
+.category{
+
+display:inline-block;
+
+padding:6px 14px;
+
+background:#F4E7C3;
+
+color:#6E1B1B;
+
+border-radius:30px;
+
+font-size:13px;
+
+font-weight:600;
+
+margin-bottom:15px;
+
+text-transform:uppercase;
+
+letter-spacing:1px;
+
+}
