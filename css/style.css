@@ -701,3 +701,86 @@ margin-bottom:10px;
 font-size:18px;
 
 }
+/*=========================
+      DEPOIMENTOS
+==========================*/
+
+.testimonials{
+
+padding:100px 0;
+
+background:white;
+
+}
+
+.testimonials h2{
+
+text-align:center;
+
+font-size:42px;
+
+color:#6E1B1B;
+
+margin-bottom:60px;
+
+}
+
+.testimonial-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:35px;
+
+}
+
+.testimonial{
+
+background:#F8F8F8;
+
+padding:35px;
+
+border-radius:18px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.testimonial:hover{
+
+transform:translateY(-8px);
+
+}
+
+.testimonial p{
+
+font-size:17px;
+
+line-height:1.8;
+
+color:#555;
+
+margin-bottom:20px;
+
+}
+
+.testimonial h4{
+
+color:#C8A44D;
+
+font-size:22px;
+
+margin-bottom:12px;
+
+}
+
+.testimonial span{
+
+font-weight:600;
+
+color:#6E1B1B;
+
+}
