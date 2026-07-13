@@ -59,43 +59,27 @@ VERBUM
 <div class="dashboard">
 
 <div class="card">
-
 <h2>📚</h2>
-
 <h3>3</h3>
-
 <p>eBooks</p>
-
 </div>
 
 <div class="card">
-
 <h2>👥</h2>
-
 <h3>0</h3>
-
 <p>Usuários</p>
-
 </div>
 
 <div class="card">
-
 <h2>🔑</h2>
-
 <h3>0</h3>
-
 <p>Códigos</p>
-
 </div>
 
 <div class="card">
-
 <h2>📈</h2>
-
 <h3>0</h3>
-
 <p>Vendas</p>
-
 </div>
 
 </div>
@@ -123,19 +107,15 @@ required>
 
 <label>Categoria</label>
 
-<select>
+<select id="categoria">
 
 <option>Fé Católica</option>
-
 <option>Finanças</option>
-
 <option>Tecnologia</option>
-
 <option>Inteligência Artificial</option>
-
 <option>Família</option>
 
-<select id="categoria">
+</select>
 
 <label>Descrição</label>
 
@@ -158,11 +138,11 @@ type="file"
 id="capa">
 
 <label>Upload do eBook (PDF)</label>
-    
+
 <input
 type="file"
 id="pdf">
-    
+
 <button type="submit">
 
 Salvar eBook
@@ -170,52 +150,7 @@ Salvar eBook
 </button>
 
 </form>
-
-    <h2 class="section-title">
-
-eBooks cadastrados
-
-</h2>
-
-<div class="ebook-list">
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>Título</th>
-
-<th>Categoria</th>
-
-<th>Páginas</th>
-
-<th>Ações</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td colspan="4" style="text-align:center">
-
-Nenhum eBook cadastrado.
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-</div>
-    
-    <h2 class="section-title">
+<h2 class="section-title">
 
 eBooks cadastrados
 
@@ -259,6 +194,8 @@ Nenhum eBook cadastrado.
 
 </div>
 
+</div>
+
 </section>
 
 <footer>
@@ -289,7 +226,7 @@ Nenhum eBook cadastrado.
 
 if(sessionStorage.getItem("adminLogado") !== "true"){
 
-    window.location.href="adm-login.html";
+    window.location.href = "adm-login.html";
 
 }
 
@@ -297,7 +234,7 @@ function logoutAdmin(){
 
     sessionStorage.removeItem("adminLogado");
 
-    window.location.href="adm-login.html";
+    window.location.href = "adm-login.html";
 
 }
 
