@@ -288,3 +288,56 @@ font-size:20px;
 margin-right:12px;
 
 }
+/*=========================
+      TABELA DE EBOOKS
+=========================*/
+
+.ebook-list{
+
+margin-top:35px;
+
+background:white;
+
+border-radius:18px;
+
+padding:30px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+overflow-x:auto;
+
+}
+
+.ebook-list table{
+
+width:100%;
+
+border-collapse:collapse;
+
+}
+
+.ebook-list th{
+
+background:#6E1B1B;
+
+color:white;
+
+padding:16px;
+
+text-align:left;
+
+}
+
+.ebook-list td{
+
+padding:16px;
+
+border-bottom:1px solid #eee;
+
+}
+
+.ebook-list tr:hover{
+
+background:#fafafa;
+
+}
