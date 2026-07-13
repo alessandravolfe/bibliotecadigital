@@ -202,3 +202,26 @@ body{
 background:red !important;
 
 }
+/*=========================
+      MENSAGEM
+=========================*/
+
+.success-message{
+
+display:none;
+
+background:#d4edda;
+
+color:#155724;
+
+padding:18px;
+
+border-radius:12px;
+
+margin-bottom:25px;
+
+font-weight:600;
+
+border:1px solid #c3e6cb;
+
+}
