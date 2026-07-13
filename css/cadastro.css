@@ -32,6 +32,19 @@ margin-top:4px;
 
 .login-box button{
 
+   .terms input[type="checkbox"]{
+    width:18px;
+    height:18px;
+    margin-top:4px;
+}
+   .terms{
+    margin:30px 0;
+}
+
+.register{
+    margin-top:35px;
+}
+
 margin-top:10px;
 
 }
