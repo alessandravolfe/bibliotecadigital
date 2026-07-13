@@ -30,7 +30,49 @@ formulario.addEventListener("submit", function(e){
 
 localStorage.setItem("ebooks", JSON.stringify(ebooks));
 
-atualizarTabela();
+function atualizarTabela(){
+
+    if(ebooks.length === 0){
+
+        tabela.innerHTML = `
+            <tr>
+                <td colspan="4" style="text-align:center;">
+                    Nenhum eBook cadastrado.
+                </td>
+            </tr>
+        `;
+
+        return;
+
+    }
+
+    tabela.innerHTML = "";
+
+    ebooks.forEach((livro, indice) => {
+
+        tabela.innerHTML += `
+            <tr>
+
+                <td>${livro.titulo}</td>
+
+                <td>${livro.categoria}</td>
+
+                <td>${livro.paginas}</td>
+
+                <td>
+
+                    <button onclick="excluirLivro(${indice})">
+                        🗑️
+                    </button>
+
+                </td>
+
+            </tr>
+        `;
+
+    });
+
+}
 
     formulario.reset();
 
