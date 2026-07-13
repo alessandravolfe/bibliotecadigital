@@ -1,1 +1,203 @@
+/* ==========================================
+   LOGIN - VERBUM
+========================================== */
 
+.login-page{
+    background:#f4f4f4;
+    min-height:100vh;
+}
+
+.login-container{
+    min-height:100vh;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.login-left{
+    background:linear-gradient(135deg,#6E1B1B,#2F0C0C);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:70px;
+}
+
+.overlay{
+    max-width:500px;
+}
+
+.overlay h1{
+    font-size:70px;
+    margin-bottom:20px;
+    font-weight:800;
+}
+
+.overlay p{
+    color:#C8A44D;
+    font-size:28px;
+    margin-bottom:30px;
+    font-weight:600;
+}
+
+.overlay span{
+    display:block;
+    font-size:18px;
+    line-height:1.9;
+    opacity:.9;
+}
+
+.login-right{
+    background:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px;
+}
+
+.login-box{
+    width:100%;
+    max-width:430px;
+}
+
+.back-home{
+    text-decoration:none;
+    color:#6E1B1B;
+    font-weight:600;
+    display:inline-block;
+    margin-bottom:25px;
+}
+
+.login-box h2{
+    font-size:46px;
+    color:#6E1B1B;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#777;
+    margin-bottom:35px;
+}
+
+.login-box label{
+    display:block;
+    margin:18px 0 8px;
+    font-weight:600;
+}
+
+.login-box input[type=email],
+.login-box input[type=password]{
+
+    width:100%;
+    padding:18px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    font-size:16px;
+    transition:.3s;
+
+}
+
+.login-box input:focus{
+
+outline:none;
+
+border-color:#6E1B1B;
+
+box-shadow:0 0 0 4px rgba(110,27,27,.10);
+
+}
+
+.login-options{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin:25px 0;
+
+font-size:14px;
+
+}
+
+.login-options a{
+
+text-decoration:none;
+
+color:#6E1B1B;
+
+font-weight:600;
+
+}
+
+.login-box button{
+
+width:100%;
+
+padding:18px;
+
+background:#6E1B1B;
+
+color:white;
+
+border:none;
+
+border-radius:12px;
+
+font-size:18px;
+
+font-weight:700;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.login-box button:hover{
+
+background:#531414;
+
+transform:translateY(-2px);
+
+}
+
+.register{
+
+margin-top:30px;
+
+text-align:center;
+
+}
+
+.register a{
+
+color:#6E1B1B;
+
+font-weight:700;
+
+text-decoration:none;
+
+}
+
+@media(max-width:900px){
+
+.login-container{
+
+grid-template-columns:1fr;
+
+}
+
+.login-left{
+
+display:none;
+
+}
+
+.login-right{
+
+padding:35px;
+
+}
+
+}
