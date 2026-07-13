@@ -1,14 +1,14 @@
-// ==============================
+// ===============================
 // VERBUM - Painel Administrativo
-// ==============================
+// ===============================
+
+const ebooks = [];
 
 document.addEventListener("DOMContentLoaded", () => {
 
     const formulario = document.querySelector(".ebook-form");
 
-    if (!formulario) return;
-
-    formulario.addEventListener("submit", function (e) {
+    formulario.addEventListener("submit", function(e){
 
         e.preventDefault();
 
@@ -20,29 +20,77 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const paginas = formulario.querySelector('input[type="number"]').value;
 
-        if (
-            titulo === "" ||
-            descricao === "" ||
-            paginas === ""
-        ) {
+        if(titulo==="" || descricao==="" || paginas===""){
 
-            alert("Preencha todos os campos obrigatórios.");
+            alert("Preencha todos os campos.");
 
             return;
 
         }
 
-    const mensagem = document.getElementById("mensagem-sucesso");
+        ebooks.push({
 
-mensagem.style.display = "block";
+            titulo,
+            categoria,
+            descricao,
+            paginas
 
-formulario.reset();
+        });
 
-setTimeout(() => {
+        atualizarTabela();
 
-    mensagem.style.display = "none";
+        document.getElementById("mensagem-sucesso").style.display="block";
 
-},3000);
+        formulario.reset();
+
+        setTimeout(()=>{
+
+            document.getElementById("mensagem-sucesso").style.display="none";
+
+        },3000);
+
     });
 
 });
+
+function atualizarTabela(){
+
+    const tabela = document.getElementById("lista-ebooks");
+
+    tabela.innerHTML="";
+
+    ebooks.forEach((livro,index)=>{
+
+        tabela.innerHTML+=`
+
+<tr>
+
+<td>${livro.titulo}</td>
+
+<td>${livro.categoria}</td>
+
+<td>${livro.paginas}</td>
+
+<td>
+
+<span class="action-btn">✏️</span>
+
+<span class="action-btn" onclick="removerLivro(${index})">🗑️</span>
+
+</td>
+
+</tr>
+
+`;
+
+    });
+
+}
+
+function removerLivro(indice){
+
+    ebooks.splice(indice,1);
+
+    atualizarTabela();
+
+}
