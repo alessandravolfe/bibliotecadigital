@@ -593,3 +593,62 @@ color:#222;
 font-weight:600;
 
 }
+/*=========================
+        MENU
+==========================*/
+
+.logo{
+display:flex;
+flex-direction:column;
+line-height:1.1;
+}
+
+.logo span{
+
+font-size:13px;
+
+color:#C8A44D;
+
+font-weight:500;
+
+letter-spacing:1px;
+
+margin-top:5px;
+
+}
+
+nav{
+
+display:flex;
+
+align-items:center;
+
+gap:35px;
+
+}
+
+nav a{
+
+font-size:17px;
+
+font-weight:500;
+
+}
+
+.btn{
+
+padding:14px 28px;
+
+border-radius:12px;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#B38E35;
+
+transform:translateY(-3px);
+
+}
