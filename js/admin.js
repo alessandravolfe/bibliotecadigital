@@ -2,7 +2,7 @@
 // VERBUM - Painel Administrativo
 // ===============================
 
-const ebooks = [];
+let ebooks = JSON.parse(localStorage.getItem("ebooks")) || [];
 
 const formulario = document.querySelector(".ebook-form");
 const tabela = document.getElementById("lista-ebooks");
@@ -26,9 +26,11 @@ formulario.addEventListener("submit", function(e){
 
     };
 
-    ebooks.push(livro);
+   ebooks.push(livro);
 
-    atualizarTabela();
+localStorage.setItem("ebooks", JSON.stringify(ebooks));
+
+atualizarTabela();
 
     formulario.reset();
 
@@ -80,6 +82,10 @@ function excluirLivro(indice){
 
     ebooks.splice(indice,1);
 
+    localStorage.setItem("ebooks", JSON.stringify(ebooks));
+
     atualizarTabela();
 
 }
+
+atualizarTabela();
