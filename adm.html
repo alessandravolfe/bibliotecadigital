@@ -40,6 +40,8 @@ VERBUM
 
 <a href="#" class="active">Painel Admin</a>
 
+<a href="#" onclick="logoutAdmin()">Sair</a>
+
 </nav>
 
 </div>
@@ -183,6 +185,25 @@ Salvar eBook
 </div>
 
 </footer>
+<script>
+
+if(sessionStorage.getItem("adminLogado") !== "true"){
+
+    window.location.href="adm-login.html";
+  
+
+}
+  <script>
+
+function logoutAdmin(){
+
+    sessionStorage.removeItem("adminLogado");
+
+    window.location.href="adm-login.html";
+
+}
+
+</script>
 
 </body>
 
