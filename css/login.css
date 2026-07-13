@@ -84,8 +84,14 @@
     font-weight:600;
 }
 
-.login-box input[type=email],
-.login-box input[type=password]{
+.login-box input{
+    width:100%;
+    padding:18px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    font-size:16px;
+    transition:.3s;
+}
 
     width:100%;
     padding:18px;
@@ -97,13 +103,9 @@
 }
 
 .login-box input:focus{
-
-outline:none;
-
-border-color:#6E1B1B;
-
-box-shadow:0 0 0 4px rgba(110,27,27,.10);
-
+    outline:none;
+    border-color:#6E1B1B;
+    box-shadow:0 0 0 4px rgba(110,27,27,.10);
 }
 
 .login-options{
