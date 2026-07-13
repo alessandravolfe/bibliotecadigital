@@ -1,162 +1,213 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-
-background:#f4f4f4;
-
-color:#333;
-
+body {
+  min-height: 100vh;
+  background: #f6f2ec;
+  color: #263238;
 }
 
-nav{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:20px 50px;
-
-background:#7b0000;
-
-color:white;
-
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 7%;
+  background: #741c1c;
+  color: white;
 }
 
-.logo{
-
-font-size:28px;
-
-font-weight:bold;
-
+.logo {
+  font-size: 22px;
+  font-weight: bold;
 }
 
-nav a{
-
-color:white;
-
-text-decoration:none;
-
-margin-left:20px;
-
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 16px;
+  font-weight: bold;
 }
 
-.btn{
-
-background:white;
-
-color:#7b0000;
-
-padding:10px 20px;
-
-border-radius:6px;
-
-font-weight:bold;
-
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: white;
+  color: #741c1c;
 }
 
-header{
-
-padding:100px 20px;
-
-text-align:center;
-
+header {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #741c1c, #a83232);
+  color: white;
 }
 
-header h1{
-
-font-size:52px;
-
-margin-bottom:20px;
-
+header h1 {
+  max-width: 800px;
+  margin: 0 auto 16px;
+  font-size: clamp(34px, 6vw, 58px);
 }
 
-header p{
-
-font-size:22px;
-
-margin-bottom:40px;
-
+header p {
+  margin-bottom: 34px;
+  font-size: 20px;
 }
 
-.botao{
-
-background:#7b0000;
-
-padding:15px 35px;
-
-color:white;
-
-text-decoration:none;
-
-border-radius:8px;
-
-font-size:20px;
-
+.botao,
+form button {
+  display: inline-block;
+  border: 0;
+  padding: 15px 24px;
+  border-radius: 9px;
+  background: #d6a54b;
+  color: #2f1b09;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.ebooks{
-
-padding:60px;
-
+.ebooks {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
 }
 
-.cards{
-
-display:flex;
-
-gap:30px;
-
-justify-content:center;
-
-flex-wrap:wrap;
-
-margin-top:40px;
-
+.ebooks h2 {
+  font-size: 30px;
+  color: #741c1c;
 }
 
-.card{
-
-width:280px;
-
-background:white;
-
-padding:40px;
-
-border-radius:12px;
-
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-
-text-align:center;
-
-font-size:50px;
-
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
 }
 
-.card h3{
-
-font-size:22px;
-
-margin:20px 0;
-
+.card {
+  width: 280px;
+  min-height: 210px;
+  padding: 34px 24px;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .10);
+  font-size: 42px;
 }
 
-footer{
+.card h3 {
+  margin: 18px 0 10px;
+  color: #741c1c;
+  font-size: 21px;
+}
 
-margin-top:80px;
+.card p {
+  font-size: 15px;
+  color: #607070;
+}
 
-padding:30px;
+.login-area {
+  display: grid;
+  min-height: calc(100vh - 150px);
+  padding: 48px 20px;
+  place-items: center;
+}
 
-background:#222;
+.login-card {
+  width: 100%;
+  max-width: 470px;
+  padding: 34px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .12);
+}
 
-color:white;
+.login-card h1 {
+  margin-bottom: 10px;
+  color: #741c1c;
+  font-size: 31px;
+}
 
-text-align:center;
+.login-card > p {
+  margin-bottom: 26px;
+  color: #607070;
+  line-height: 1.5;
+}
 
+form {
+  display: grid;
+  gap: 9px;
+}
+
+form label {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d4d4d4;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+form input:focus {
+  outline: 2px solid #d6a54b;
+  border-color: #d6a54b;
+}
+
+form button {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.login-link {
+  margin: 22px 0 0 !important;
+  text-align: center;
+}
+
+.login-link a {
+  color: #741c1c;
+  font-weight: bold;
+}
+
+footer {
+  padding: 28px 20px;
+  background: #202020;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  nav {
+    padding: 16px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 0 7px;
+  }
+
+  header {
+    padding: 72px 20px;
+  }
+
+  header p {
+    font-size: 18px;
+  }
+
+  .login-card {
+    padding: 28px 22px;
+  }
 }
