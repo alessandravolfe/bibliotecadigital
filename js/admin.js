@@ -32,10 +32,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
         }
 
-        alert("✅ eBook cadastrado com sucesso!");
+    const mensagem = document.getElementById("mensagem-sucesso");
 
-        formulario.reset();
+mensagem.style.display = "block";
 
+formulario.reset();
+
+setTimeout(() => {
+
+    mensagem.style.display = "none";
+
+},3000);
     });
 
 });
