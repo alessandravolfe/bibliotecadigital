@@ -4,19 +4,16 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Minha Biblioteca | VERBUM</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
-
 <link rel="stylesheet" href="css/biblioteca.css">
 
 </head>
@@ -39,7 +36,7 @@ VERBUM
 
 <a href="index.html">Home</a>
 
-<a href="#">Minha Biblioteca</a>
+<a href="#" class="active">Minha Biblioteca</a>
 
 <a href="#">Minha Conta</a>
 
@@ -49,25 +46,25 @@ VERBUM
 
 </header>
 
-<section class="library-hero">
+<section class="library-banner">
 
 <div class="container">
 
-<h1>
-
-Minha Biblioteca
-
-</h1>
+<h1>Minha Biblioteca</h1>
 
 <p>
 
-Todos os seus eBooks em um único lugar.
+Todos os seus eBooks disponíveis em um único lugar.
 
 </p>
+
+<div class="search-box">
 
 <input
 type="text"
 placeholder="🔍 Buscar eBooks...">
+
+</div>
 
 </div>
 
@@ -77,21 +74,23 @@ placeholder="🔍 Buscar eBooks...">
 
 <div class="container">
 
-<h2>
-
-Continue lendo
-
-</h2>
+<h2>Continue Lendo</h2>
 
 <div class="continue-card">
 
-<div class="cover">
+<div class="continue-cover">
 
-📘
+<img src="img/oracao-diaria.jpg" alt="Como Criar o Hábito de Oração Diária">
 
 </div>
 
-<div>
+<div class="continue-info">
+
+<span class="badge">
+
+✝️ Fé Católica
+
+</span>
 
 <h3>
 
@@ -101,13 +100,13 @@ Como Criar o Hábito de Oração Diária
 
 <p>
 
-Você parou na página 42.
+Você parou na página <strong>42</strong>.
 
 </p>
 
-<a href="#">
+<a href="leitor.html" class="read-button">
 
-Ler Agora
+Continuar Leitura
 
 </a>
 
@@ -123,74 +122,70 @@ Ler Agora
 
 <div class="container">
 
-<h2>
-
-Minha Biblioteca
-
-</h2>
+<h2>Minha Biblioteca</h2>
 
 <div class="books-grid">
-<div class="book-item">
+    <div class="book-card">
 
     <div class="book-image">
 
-        <img src="https://placehold.co/300x420/6E1B1B/FFFFFF?text=ORAÇÃO" alt="Oração">
+        <img src="img/oracao-diaria.jpg" alt="Como Criar o Hábito de Oração Diária">
 
     </div>
 
-    <div class="book-details">
+    <div class="book-content">
 
-        <span class="book-category">Fé Católica</span>
+        <span class="category">✝️ Fé Católica</span>
 
         <h3>Como Criar o Hábito de Oração Diária</h3>
 
         <p>125 páginas</p>
 
-        <a href="#" class="read-btn">Ler Agora</a>
+        <a href="leitor.html" class="btn-read">Ler Agora</a>
 
     </div>
 
 </div>
 
-<div class="book-item">
+<div class="book-card">
 
     <div class="book-image">
 
-        <img src="https://placehold.co/300x420/C8A44D/FFFFFF?text=ROSÁRIO" alt="Rosário">
+        <img src="img/rosario.jpg" alt="O Santo Rosário Explicado Passo a Passo">
 
     </div>
 
-    <div class="book-details">
+    <div class="book-content">
 
-        <span class="book-category">Fé Católica</span>
+        <span class="category">✝️ Fé Católica</span>
 
         <h3>O Santo Rosário Explicado Passo a Passo</h3>
 
         <p>98 páginas</p>
 
-        <a href="#" class="read-btn">Ler Agora</a>
+        <a href="leitor.html" class="btn-read">Ler Agora</a>
 
     </div>
 
 </div>
 
-<div class="book-item">
+<div class="book-card">
 
     <div class="book-image">
 
-        <img src="https://placehold.co/300x420/444444/FFFFFF?text=SANTIDADE" alt="Santidade">
+        <img src="img/santidade.jpg" alt="Como Crescer na Santidade no Mundo de Hoje">
 
     </div>
 
-    <div class="book-details">
+    <div class="book-content">
 
-        <span class="book-category">Fé Católica</span>
+        <span class="category">✝️ Fé Católica</span>
 
         <h3>Como Crescer na Santidade no Mundo de Hoje</h3>
 
         <p>142 páginas</p>
 
-        <a href="#" class="read-btn">Ler Agora</a>
+        <a href="leitor.html" class="btn-read">Ler Agora</a>
 
     </div>
 
@@ -201,6 +196,28 @@ Minha Biblioteca
 </div>
 
 </section>
+
+<footer>
+
+<div class="container">
+
+<div>
+
+<h3>VERBUM</h3>
+
+<p>Conhecimento que permanece.</p>
+
+</div>
+
+<div>
+
+<p>© 2026 VERBUM. Todos os direitos reservados.</p>
+
+</div>
+
+</div>
+
+</footer>
 
 </body>
 
