@@ -116,7 +116,10 @@ Cadastrar novo eBook
 
 <label>Título</label>
 
-<input type="text" required>
+<input
+type="text"
+id="titulo"
+required>
 
 <label>Categoria</label>
 
@@ -132,24 +135,34 @@ Cadastrar novo eBook
 
 <option>Família</option>
 
-</select>
+<select id="categoria">
 
 <label>Descrição</label>
 
-<textarea rows="5" required></textarea>
+<textarea
+id="descricao"
+rows="5"
+required></textarea>
 
 <label>Número de páginas</label>
 
-<input type="number" required>
+<input
+type="number"
+id="paginas"
+required>
 
 <label>Upload da Capa</label>
 
-<input type="file">
+<input
+type="file"
+id="capa">
 
 <label>Upload do eBook (PDF)</label>
-
-<input type="file">
-
+    
+<input
+type="file"
+id="pdf">
+    
 <button type="submit">
 
 Salvar eBook
