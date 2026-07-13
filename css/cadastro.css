@@ -1,1 +1,37 @@
+/* ==========================================
+   CADASTRO - VERBUM
+========================================== */
 
+.terms{
+
+margin:25px 0;
+
+}
+
+.terms label{
+
+display:flex;
+
+align-items:flex-start;
+
+gap:10px;
+
+font-size:14px;
+
+font-weight:400;
+
+line-height:1.6;
+
+}
+
+.terms input{
+
+margin-top:4px;
+
+}
+
+.login-box button{
+
+margin-top:10px;
+
+}
