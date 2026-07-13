@@ -652,3 +652,52 @@ background:#B38E35;
 transform:translateY(-3px);
 
 }
+/*=========================
+      NÚMEROS
+==========================*/
+
+.numbers{
+
+padding:90px 0;
+
+background:#6E1B1B;
+
+color:white;
+
+text-align:center;
+
+}
+
+.numbers h2{
+
+font-size:42px;
+
+margin-bottom:60px;
+
+}
+
+.stats{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+gap:30px;
+
+}
+
+.stats h3{
+
+font-size:48px;
+
+color:#C8A44D;
+
+margin-bottom:10px;
+
+}
+
+.stats p{
+
+font-size:18px;
+
+}
