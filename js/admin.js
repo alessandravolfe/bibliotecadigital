@@ -12,13 +12,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
         e.preventDefault();
 
-        const titulo = formulario.querySelector('input[type="text"]').value.trim();
+       const titulo = document.getElementById("titulo").value.trim();
 
-        const categoria = formulario.querySelector("select").value;
+const categoria = document.getElementById("categoria").value;
 
-        const descricao = formulario.querySelector("textarea").value.trim();
+const descricao = document.getElementById("descricao").value.trim();
 
-        const paginas = formulario.querySelector('input[type="number"]').value;
+const paginas = document.getElementById("paginas").value;
 
         if(titulo==="" || descricao==="" || paginas===""){
 
